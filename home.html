@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Project 1</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+</head>
+
+<body>
+    <div id="indexBody">
+    <div class="container">
+        <div id="mainContainer">
+            <div id="insideContainer">
+                    <h1>Enter ingredients here</h1>
+            <form autocomplete="off">
+                <div class="form-group">
+                    <button type="button" class="btn btn-primary" id="resetButton">Start Over</button>
+                    <input type="input" class="form-control" id="input-ingredient">
+                    <button type="submit" class="btn btn-primary" id="addItem">Add Item</button>
+                </div>
+            </form>
+            <button type="button" class="btn btn-primary" id="viewFavorites">Favorites</button>
+            <button type="button" class="btn btn-primary" id="recipeSearch">Search recipes</button>
+
+            
+           
+            <div id="ingredientsList"></div>
+        </div>
+        
+    </div>
+    </div>
+</div>
+
+
+    <!-- ========================= MODAL =============================== -->
+    <!-- PLEASE DO NOT TOUCH -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <div class="row">
+
+                <!-- Recipe info div -->
+                <div class="col-6" id="recipeHolder">
+                    <div id="modalTitle"></div>
+                    <div id="topSectionModal">
+                        <img id="modalImage">
+                        <div id="recipeDetails">
+                            <ul id="infoList">
+                                <li id="calorieCount"></li>
+                                <br>
+                                <li><p>Click here for full recipe:</p><a id="originalSOurce" target="_blank"></a></li>
+                                <br>
+                                <li id="healthLabels"></li> 
+                            </ul>
+                            
+                        </div>
+                </div>
+                    <div id="recipeInstructions"></div>
+                    <!-- <iframe id="twitter" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="https://platform.twitter.com/widgets/tweet_button.d547ddd75cc4ca7cc5a63b70da3da301.en.html#dnt=false&amp;id=twitter-widget-1&amp;lang=en&amp;original_referer=https%3A%2F%2Ffiddle.jshell.net%2Fswarnendu%2Ffb7t0fpe%2F3%2Fshow%2Flight%2F&amp;size=m&amp;time=1539655922875&amp;type=share&amp;url=https%3A%2F%2Ffiddle.jshell.net%2Fswarnendu%2Ffb7t0fpe%2F3%2Fshow%2Flight%2F" style="position: static; visibility: visible; width: 60px; height: 20px;"></iframe> -->
+                    <iframe id="facebook" src="https://www.facebook.com/plugins/share_button.php?href=https://www.cnn.com&layout=button&size=large&mobile_iframe=true&width=73&height=28&appId" width="73" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                    <iframe id="twitter"
+                    src="https://platform.twitter.com/widgets/tweet_button.html?size=l&url=https%3A%2F%2Fdev.twitter.com%2Fweb%2Ftweet-button&via=twitterdev&related=twitterapi%2Ctwitter&text=custom%20share%20text&hashtags=example%2Cdemo"
+                    width="140"
+                    height="28"
+                    title="Twitter Tweet Button"
+                    style="border: 0; overflow: hidden;">
+                    </iframe>
+                
+
+                </div>
+                
+                <div class="col-1"></div>
+
+
+                <!-- YouTube videos div -->
+                
+                <div class="col-4" id="youTubeVids">
+                        <!-- <iframe id="frameVid" width="450" height="250" allowfullscreen frameborder="0"></iframe> -->
+
+                </div>
+
+                <div class="col-1"></div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/g3AMQCf4lj4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+
+
+</html>
+
+
